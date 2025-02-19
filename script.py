@@ -10,14 +10,14 @@ pRent=float(input("Enter the percentage of salary for Rent:"))
 list.append(pRent)
 pelectricity= float(input("Enter the percentage of salary for electricity:"))
 list.append(pelectricity)
-
-if i==0:
+for i in range (3):
+  if i==0:
    savings=(psavings/100)*salary
    list.append(savings)
-elif i==1:
+  elif i==1:
    Rent=(pRent/100)*salary
    list.append(Rent)
-elif i==2:
+  elif i==2:
    electricity=(pelectricity/100)*salary
    list.append(electricity)
    total=savings+Rent+electricity
