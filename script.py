@@ -30,3 +30,6 @@ yearlyrent = Rent * 12
 list.append(yearlyrent)
 yearlyelectricity=electricity * 12
 list.append(yearlyelectricity)
+
+totalsalary=pow(salary,2)
+list.append(totalsalary)
