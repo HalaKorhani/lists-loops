@@ -20,3 +20,5 @@ elif i==1:
 elif i==2:
    electricity=(pelectricity/100)*salary
    list.append(electricity)
+   total=savings+Rent+electricity
+list.append(total)
