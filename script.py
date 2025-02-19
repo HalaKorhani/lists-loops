@@ -22,3 +22,6 @@ elif i==2:
    list.append(electricity)
    total=savings+Rent+electricity
 list.append(total)
+
+remainder=salary-total
+list.append(remainder)
