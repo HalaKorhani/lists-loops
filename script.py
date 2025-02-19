@@ -25,3 +25,8 @@ list.append(total)
 
 remainder=salary-total
 list.append(remainder)
+
+yearlyrent = Rent * 12
+list.append(yearlyrent)
+yearlyelectricity=electricity * 12
+list.append(yearlyelectricity)
