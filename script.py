@@ -48,4 +48,4 @@ print(f"Yearly rent cost: ${yearlyrent:.2f}")
 print(f"Yearly electricity cost: ${yearlyelectricity:.2f}")
 print(f"Your salary squared : ${totalsalary:.2f}")
 print(f"How much would be left if the random savings of $50 is divided by the total allocated savings: {remainingamount:.2f}")
-
+print (list)
