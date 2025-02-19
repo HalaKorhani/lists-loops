@@ -33,3 +33,5 @@ list.append(yearlyelectricity)
 
 totalsalary=pow(salary,2)
 list.append(totalsalary)
+additionalamount=random.uniform(1,50)
+list.append(additionalamount)
