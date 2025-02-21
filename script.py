@@ -1,42 +1,67 @@
 import random 
+
+
 list=[]
-salary=int(input("input your salary for the month"))
-list.append(salary)
-month=input("enter the name of the month")
-list.append(month)
-psavings=float(input("Enter the percentage of salary for savings:"))
-list.append(psavings)
-pRent=float(input("Enter the percentage of salary for Rent:"))
-list.append(pRent)
-pelectricity= float(input("Enter the percentage of salary for electricity:"))
-list.append(pelectricity)
-for i in range (3):
-  if i==0:
-   savings=(psavings/100)*salary
-   list.append(savings)
-  elif i==1:
-   Rent=(pRent/100)*salary
-   list.append(Rent)
-  elif i==2:
-   electricity=(pelectricity/100)*salary
-   list.append(electricity)
-   total=savings+Rent+electricity
-list.append(total)
+while True :
+   month_data={}
 
-remainder=salary-total
-list.append(remainder)
+   salary=int(input("input your salary for the month"))
+   month_data['Salary'] = salary
 
-yearlyrent = Rent * 12
-list.append(yearlyrent)
-yearlyelectricity=electricity * 12
-list.append(yearlyelectricity)
+ 
+   month=input("enter the name of the month")
+   month_data['Month'] = month
+  
+   psavings=float(input("Enter the percentage of salary for savings:"))
+   month_data['Savings%'] = psavings
+   
+   pRent=float(input("Enter the percentage of salary for Rent:"))
+   month_data['Rent%'] = pRent
+   
+   pelectricity= float(input("Enter the percentage of salary for electricity:"))
+   month_data['Electricity%'] = pelectricity
+  
+   for i in range (3):
+     if i==0:
+      savings=(psavings/100)*salary
+      month_data['Savings Amount'] = savings
 
-totalsalary=pow(salary,2)
-list.append(totalsalary)
-additionalamount=random.uniform(1,50)
-list.append(additionalamount)
-remainingamount= (additionalamount) / (savings)
-list.append(remainingamount)
+     
+     elif i==1:
+      Rent=(pRent/100)*salary
+      month_data['Rent Amount'] = Rent
+    
+     elif i==2:
+      electricity=(pelectricity/100)*salary
+      month_data['Electricity Amount'] = electricity
+     
+      total=savings+Rent+electricity
+      month_data['Total Expenses'] = total
+    
+      
+      remainder=salary-total
+     
+      month_data['remainder'] = remainder
+
+      yearlyrent = Rent * 12
+      month_data['Yearly Rent'] = yearlyrent
+      
+      yearlyelectricity=electricity * 12
+      month_data['Yearly Electricity'] = yearlyelectricity
+   
+
+      totalsalary=pow(salary,2)
+      month_data['Salary Squared'] = totalsalary
+
+      
+      additionalamount=random.uniform(1,50)
+      month_data['Additional Amount'] = additionalamount
+     
+      remainingamount= (additionalamount) / (savings)
+      month_data['Remaining Amount'] = remainingamount
+      
+
+    
 
 print("\nResults for the month of", month, ":")
 print(f"Amount allocated to savings: ${savings:.2f}")
