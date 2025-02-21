@@ -60,7 +60,7 @@ while True :
       remainingamount= (additionalamount) / (savings)
       month_data['Remaining Amount'] = remainingamount
       
-
+      list.append(month_data)
     
 
 print("\nResults for the month of", month, ":")
