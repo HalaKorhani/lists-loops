@@ -2,7 +2,8 @@ import random
 
 
 list=[]
-while True :
+action=True
+while action==True :
    month_data={}
 
    salary=int(input("input your salary for the month"))
@@ -76,5 +77,10 @@ while True :
       continue_input = input("Do you want to compute another month? (yes/no): ")
       if continue_input != 'yes':
         print("Exiting the program.")
+        action=False
         break
+        print("\nSummary of all months entered:")
+for month_data in list:
+    for key, value in month_data.items():
+        print(f"{key}: {value}")
 
