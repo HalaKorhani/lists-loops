@@ -63,14 +63,18 @@ while True :
       list.append(month_data)
     
 
-print("\nResults for the month of", month, ":")
-print(f"Amount allocated to savings: ${savings:.2f}")
-print(f"Amount allocated to rent: ${Rent:.2f}")
-print(f"Amount allocated to electricity: ${electricity:.2f}")
-print(f"Total expenses (savings, rent, and electricity): ${total:.2f}")
-print(f"Remainder of salary after expenses: ${remainder:.2f}")
-print(f"Yearly rent cost: ${yearlyrent:.2f}")
-print(f"Yearly electricity cost: ${yearlyelectricity:.2f}")
-print(f"Your salary squared : ${totalsalary:.2f}")
-print(f"How much would be left if the random savings of $50 is divided by the total allocated savings: {remainingamount:.2f}")
-continue_input = input("Do you want to compute another month? (yes/no): ")
+      print("\nResults for the month of", month, ":")
+      print(f"Amount allocated to savings: ${savings:.2f}")
+      print(f"Amount allocated to rent: ${Rent:.2f}")
+      print(f"Amount allocated to electricity: ${electricity:.2f}")
+      print(f"Total expenses (savings, rent, and electricity): ${total:.2f}")
+      print(f"Remainder of salary after expenses: ${remainder:.2f}")
+      print(f"Yearly rent cost: ${yearlyrent:.2f}")
+      print(f"Yearly electricity cost: ${yearlyelectricity:.2f}")
+      print(f"Your salary squared : ${totalsalary:.2f}")
+      print(f"How much would be left if the random savings of $50 is divided by the total allocated savings: {remainingamount:.2f}")
+      continue_input = input("Do you want to compute another month? (yes/no): ")
+      if continue_input != 'yes':
+        print("Exiting the program.")
+        break
+
